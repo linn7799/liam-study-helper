@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Studiehjälpen</title>
+  <meta name="description" content="Liams studiehjälp – läs, öva och förbered dig inför proven.">
+  <meta name="theme-color" content="#2f6f5e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Studiehjälpen">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="amnen/katalog.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Till startsidan">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#2f6f5e"/>
+        <path d="M7 10.5c3-1.6 6-1.6 9 0v13c-3-1.6-6-1.6-9 0z" fill="#e8f3ee"/>
+        <path d="M25 10.5c-3-1.6-6-1.6-9 0v13c3-1.6 6-1.6 9 0z" fill="#cfe7dc"/>
+        <circle cx="24" cy="8" r="3" fill="#f2b84b"/>
+      </svg>
+      <span>Studiehjälpen</span>
+    </a>
+    <a href="#/framsteg" class="toplink">Framsteg</a>
+  </header>
+  <main id="app" aria-live="polite">
+    <p class="muted">Laddar…</p>
+  </main>
+  <noscript><p style="padding:16px">Studiehjälpen behöver JavaScript.</p></noscript>
+</body>
+</html>
