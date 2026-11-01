@@ -379,9 +379,10 @@ input[type=text]:focus, textarea:focus, select:focus { border-color: var(--accen
 }
 :root[data-tema="choklad"] .topbar { background: linear-gradient(180deg, #3d2a22, #2b1d18); --topbar-text: #f3e7dc; --topbar-link: #f0c48f; --logo-bg: #8a5a32; border-bottom: 3px solid #e0a96d; }
 
-/* Kamouflage: kamouflagemönster och stencilrubriker */
+/* Kamouflage: kamouflagemönster och DIN-rubriker (versaler bara på de stora rubrikerna) */
+:root[data-tema="kamouflage"] h1, :root[data-tema="kamouflage"] h2 { text-transform: uppercase; letter-spacing: .05em; }
 :root[data-tema="kamouflage"] {
-  --font-head: Stencil, "Stencil Std", Impact, "Arial Black", system-ui, sans-serif; --head-case: uppercase; --head-spacing: .06em;
+  --font-head: Bahnschrift, "DIN Alternate", "DIN Next", "Arial Narrow", system-ui, sans-serif; --head-spacing: .03em;
   --radius: 6px; --btn-radius: 6px; --card-border: 2px solid #454d30;
   --primary-bg: #b5c46a; --primary-border: #8f9c4c; --bar-bg: #b5c46a;
 }
