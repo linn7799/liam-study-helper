@@ -80,8 +80,14 @@
     nollstallIgen: "Tryck igen för att radera allt",
     nollstallt: "Alla framsteg är raderade.",
     nollstallInfo: "Raderar bara framstegen på den här enheten.",
+    tema: "Tema",
+    teman: [
+      ["skog", "🌲 Skog"], ["hav", "🌊 Hav"], ["solnedgang", "🌅 Solnedgång"], ["lavendel", "💜 Lavendel"], ["godis", "🍬 Godis"],
+      ["citron", "🍋 Citron"], ["rymd", "🚀 Rymd"], ["vulkan", "🌋 Vulkan"], ["kod", "💻 Kod"], ["choklad", "🍫 Choklad"],
+    ],
   };
 
+  const TEMA_KEY = "studiehjalp.tema";
   const DAG = 86400000;
   const INTERVALL = { 1: 0, 2: 1, 3: 2, 4: 4, 5: 7 };
   const BOXVIKT = { 1: 8, 2: 5, 3: 3, 4: 1.5, 5: 1 };
@@ -899,8 +905,32 @@
 
   window.Studiehjalp = { validera, katalog: () => KATALOG, amnen: AMNEN, T, normalisera, bedomFyllI };
 
+  // ---------- Tema ----------
+  function tillampaTema(id) {
+    const rot = document.documentElement;
+    if (id && id !== "skog") rot.setAttribute("data-tema", id); else rot.removeAttribute("data-tema");
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", getComputedStyle(rot).getPropertyValue("--surface").trim() || "#2f6f5e");
+  }
+  function startaTemavaljare() {
+    const val = document.getElementById("tema");
+    if (!val) return;
+    let sparat = null;
+    try { sparat = localStorage.getItem(TEMA_KEY); } catch (e) { /* ingen lagring */ }
+    const finns = T.teman.some(([id]) => id === sparat);
+    val.replaceChildren(...T.teman.map(([id, namn]) => el("option", { value: id }, namn)));
+    val.value = finns ? sparat : "skog";
+    val.title = T.tema;
+    tillampaTema(val.value);
+    val.addEventListener("change", () => {
+      tillampaTema(val.value);
+      try { localStorage.setItem(TEMA_KEY, val.value); } catch (e) { /* bara den här gången */ }
+    });
+  }
+
   // ---------- Start ----------
   if (!app) return;
+  startaTemavaljare();
   document.addEventListener("keydown", (e) => { if (tangent && !(e.target && e.target.tagName === "TEXTAREA")) tangent(e); });
   function starta() {
     if (startad) return;

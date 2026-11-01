@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="icon.svg">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Studiehjälpen">
+  <script>try { var t = localStorage.getItem("studiehjalp.tema"); if (t && t !== "skog") document.documentElement.setAttribute("data-tema", t); } catch (e) {}</script>
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
   <script defer src="amnen/katalog.js"></script>
@@ -19,14 +20,17 @@
   <header class="topbar">
     <a href="#/" class="brand" aria-label="Till startsidan">
       <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
-        <rect width="32" height="32" rx="8" fill="#2f6f5e"/>
+        <rect width="32" height="32" rx="8" style="fill: var(--accent)"/>
         <path d="M7 10.5c3-1.6 6-1.6 9 0v13c-3-1.6-6-1.6-9 0z" fill="#e8f3ee"/>
         <path d="M25 10.5c-3-1.6-6-1.6-9 0v13c3-1.6 6-1.6 9 0z" fill="#cfe7dc"/>
         <circle cx="24" cy="8" r="3" fill="#f2b84b"/>
       </svg>
-      <span>Studiehjälpen</span>
+      <span class="brand-text">Studiehjälpen</span>
     </a>
-    <a href="#/framsteg" class="toplink">Framsteg</a>
+    <div class="topnav">
+      <select id="tema" aria-label="Tema"></select>
+      <a href="#/framsteg" class="toplink">Framsteg</a>
+    </div>
   </header>
   <main id="app" aria-live="polite">
     <p class="muted">Laddar…</p>

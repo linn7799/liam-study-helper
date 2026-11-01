@@ -34,6 +34,52 @@
   --mid: #f0c060; --mid-soft: #3a2f17; --shadow: none; color-scheme: dark;
 }
 
+/* Teman (väljs i rullistan, sparas per enhet). "Skog" är standard och följer enhetens ljus/mörker. */
+:root[data-tema="hav"], :root[data-tema="solnedgang"], :root[data-tema="lavendel"], :root[data-tema="godis"], :root[data-tema="citron"] {
+  --good: #2e7d4f; --good-soft: #e3f3e9; --bad: #b53a2e; --bad-soft: #fbe7e4; --mid: #94600a; --mid-soft: #fbf0d9;
+  --shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 4px 14px rgb(0 0 0 / 5%); color-scheme: light;
+}
+:root[data-tema="rymd"], :root[data-tema="vulkan"], :root[data-tema="kod"], :root[data-tema="choklad"] {
+  --good: #6fcf97; --good-soft: #1b3326; --bad: #f08a7e; --bad-soft: #3d201c; --mid: #f0c060; --mid-soft: #3a2f17;
+  --shadow: none; color-scheme: dark;
+}
+:root[data-tema="hav"] {
+  --bg: #eef5f9; --surface: #ffffff; --surface-2: #e1edf4; --text: #14283a; --muted: #4f6577; --border: #cfdde7;
+  --accent: #1f6aa5; --accent-contrast: #ffffff; --accent-soft: #dcebf7; --focus: #f2b84b;
+}
+:root[data-tema="solnedgang"] {
+  --bg: #fbf2ea; --surface: #ffffff; --surface-2: #f6e5d6; --text: #3a2418; --muted: #74564a; --border: #ecd5c3;
+  --accent: #c2410c; --accent-contrast: #ffffff; --accent-soft: #fde3d3; --focus: #2563eb;
+}
+:root[data-tema="lavendel"] {
+  --bg: #f5f2fb; --surface: #ffffff; --surface-2: #ebe5f6; --text: #2a2140; --muted: #615877; --border: #ddd4ee;
+  --accent: #6d4bc4; --accent-contrast: #ffffff; --accent-soft: #ebe3fa; --focus: #f2b84b;
+}
+:root[data-tema="godis"] {
+  --bg: #fdf1f6; --surface: #ffffff; --surface-2: #f9e1ec; --text: #3d1a2b; --muted: #775164; --border: #f0d0de;
+  --accent: #c0266d; --accent-contrast: #ffffff; --accent-soft: #fbe0ec; --focus: #1fa2ad;
+}
+:root[data-tema="citron"] {
+  --bg: #fbf9e3; --surface: #ffffff; --surface-2: #f4efc6; --text: #2d2a12; --muted: #625c36; --border: #e6dfb0;
+  --accent: #7a6400; --accent-contrast: #ffffff; --accent-soft: #f8eeb0; --focus: #2563eb;
+}
+:root[data-tema="rymd"] {
+  --bg: #0e1022; --surface: #171a33; --surface-2: #20244a; --text: #e8e9ff; --muted: #a3a6cc; --border: #2e3360;
+  --accent: #a78bfa; --accent-contrast: #140f2e; --accent-soft: #2a2554; --focus: #22d3ee;
+}
+:root[data-tema="vulkan"] {
+  --bg: #170f0e; --surface: #221615; --surface-2: #2d1d1b; --text: #f7e9e5; --muted: #c0a29b; --border: #43302c;
+  --accent: #ff7a45; --accent-contrast: #1d0d06; --accent-soft: #43231a; --focus: #ffd166;
+}
+:root[data-tema="kod"] {
+  --bg: #050805; --surface: #0c120c; --surface-2: #142014; --text: #d6ffd6; --muted: #8fbf8f; --border: #1f3a1f;
+  --accent: #39ff6a; --accent-contrast: #031a08; --accent-soft: #12301a; --focus: #ffe066;
+}
+:root[data-tema="choklad"] {
+  --bg: #1a1210; --surface: #241a17; --surface-2: #30231f; --text: #f3e7dc; --muted: #bba596; --border: #46352e;
+  --accent: #e0a96d; --accent-contrast: #23150a; --accent-soft: #3f2c1f; --focus: #8fd3ff;
+}
+
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
@@ -58,6 +104,8 @@ p { margin: 0 0 .8em; }
 .brand { display: flex; gap: 10px; align-items: center; text-decoration: none; color: var(--text); font-weight: 700; }
 .toplink { text-decoration: none; font-weight: 600; padding: 6px 10px; border-radius: 8px; }
 .toplink:hover { background: var(--accent-soft); }
+.topnav { display: flex; align-items: center; gap: 6px; }
+.topnav select { width: auto; padding: 6px 8px; font-size: .9rem; border-width: 1px; border-radius: 8px; cursor: pointer; }
 
 main { max-width: 720px; margin: 0 auto; padding: 20px 16px 64px; }
 
@@ -183,6 +231,9 @@ input[type=text]:focus, textarea:focus, select:focus { border-color: var(--accen
 .stat span { font-size: .8rem; color: var(--muted); }
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--text); color: var(--bg); padding: 10px 18px; border-radius: 99px; font-weight: 600; z-index: 20; }
 
+@media (max-width: 400px) {
+  .brand-text { display: none; }
+}
 @media (max-width: 480px) {
   h1 { font-size: 1.4rem; }
   .match-row { grid-template-columns: 1fr; gap: 4px; }
