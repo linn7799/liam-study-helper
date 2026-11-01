@@ -83,7 +83,7 @@
     tema: "Tema",
     teman: [
       ["skog", "🌲 Skog"], ["hav", "🌊 Hav"], ["solnedgang", "🌅 Solnedgång"], ["lavendel", "💜 Lavendel"], ["godis", "🍬 Godis"],
-      ["citron", "🍋 Citron"], ["rymd", "🚀 Rymd"], ["vulkan", "🌋 Vulkan"], ["kod", "💻 Kod"], ["choklad", "🍫 Choklad"],
+      ["citron", "🍋 Citron"], ["rymd", "🚀 Rymd"], ["vulkan", "🌋 Vulkan"], ["kod", "💻 Kod"], ["choklad", "🍫 Choklad"], ["kamouflage", "🪖 Kamouflage"],
     ],
   };
 
