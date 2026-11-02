@@ -526,12 +526,12 @@ registreraAmne({
       nyckelord: ["larv", "puppa", "nymf", "fjäril", "gräshoppa"],
       forklaring: "Nyckeln: larv + puppa = fullständig. Nymf (som liknar den vuxna) = ofullständig." },
     { id: "ins-09", delomrade: "insekter", typ: "flerval", niva: 2, fraga: "På vilka sätt är insekter viktiga i naturen? Välj alla som stämmer.",
-      alternativ: ["De pollinerar blommor", "De är mat åt andra djur", "Bin gör honung", "De tillverkar syre"], svar: [0, 1, 2],
-      forklaring: "Det är växterna som tillverkar syre, inte insekterna." },
+      alternativ: ["De pollinerar blommor", "De är mat åt andra djur", "Bin gör honung", "De hjälper till att bryta ner döda växter och djur", "De tillverkar syre"], svar: [0, 1, 2, 3],
+      forklaring: "Insekter pollinerar, är mat åt andra djur, gör honung (bin) och bryter ner döda växter och djur. Det är växterna som tillverkar syre, inte insekterna." },
     { id: "ins-10", delomrade: "insekter", typ: "fritext", niva: 3, fraga: "Ge exempel på hur insekter är viktiga i naturen och för oss människor.",
-      modellsvar: "Insekter som bin och humlor pollinerar blommor, så att växter kan bilda frön och frukt, t.ex. äpplen och blåbär. Insekter är mat åt många andra djur, som fåglar och grodor. Bin gör honung som vi kan äta.",
-      nyckelord: ["pollinera|pollinerar|pollinering", "mat|föda", "honung"],
-      forklaring: "Pollinering, mat åt andra djur och honung är de tre exemplen från genomgången." },
+      modellsvar: "Insekter som bin och humlor pollinerar blommor, så att växter kan bilda frön och frukt, t.ex. äpplen och blåbär. Insekter är mat åt många andra djur, som fåglar och grodor. Bin gör honung som vi kan äta. Många insekter bryter också ner döda växter och djur (nedbrytning).",
+      nyckelord: ["pollinera|pollinerar|pollinering", "mat|föda", "honung", "nedbryt|bryter ner|bryta ner|nedbrytare|nedbrytning"],
+      forklaring: "Pollinering, mat åt andra djur, honung och nedbrytning av döda växter och djur är de fyra exemplen från genomgången." },
     { id: "ins-11", delomrade: "insekter", typ: "santfalskt", niva: 1, fraga: "Det finns fler arter av insekter än av alla andra djur tillsammans.", svar: true,
       forklaring: "Både alla andra ryggradslösa djur och alla ryggradsdjur tillsammans är färre arter än insekterna!" }
   ]
