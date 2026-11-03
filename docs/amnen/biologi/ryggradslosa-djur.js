@@ -530,7 +530,7 @@ registreraAmne({
       alternativ: ["Spindeldjur har åtta ben", "Insekter har tredelad kropp", "Kräftdjur har sex ben", "Leddjur har ryggrad"], svar: [0, 1],
       forklaring: "Spindeldjur har 8 ben och insekter har tredelad kropp. Kräftdjur har 10–30 ben, och leddjur är ryggradslösa – de har ett yttre skal i stället för ryggrad." },
     { id: "led-23", delomrade: "leddjur", typ: "ordning", niva: 2, fraga: "Sätt leddjursgrupperna i ordning efter antal ben, från minst till flest.",
-      alternativ: ["Insekter (6 ben)", "Spindeldjur (8 ben)", "Kräftdjur (10–30 ben)", "Mångfotingar (över 40 ben)"],
+      alternativ: ["Insekter", "Spindeldjur", "Kräftdjur", "Mångfotingar"],
       forklaring: "6 → 8 → 10–30 → över 40. Använd minnesknepet i lässidan om du blandar ihop dem." },
     { id: "led-24", delomrade: "leddjur", typ: "fritext", niva: 3, fraga: "Hur kan man se skillnad på en insekt och en spindel? Förklara.",
       modellsvar: "En insekt har sex ben och en tredelad kropp: huvud, mellankropp och bakkropp. En spindel har åtta ben och kroppen har bara två delar: framkropp och bakkropp.",
