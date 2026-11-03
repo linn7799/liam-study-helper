@@ -6,6 +6,7 @@ The parent adds teacher material and asks Claude to build study content for an u
 ## Hard rules
 
 - **Everything Liam sees is in Swedish**: lessons, questions, explanations, UI. Talk to the parent in English unless they write Swedish.
+  - Exception: **Modersmål engelska** topics (`modersmal/...`) are written in English (lessons, questions, model answers), because the test is in English and his writing is assessed. The app UI stays Swedish.
 - **The teacher's material is the primary source.** It decides the scope, the terms (use the teacher's words) and the emphasis. Add general knowledge only where it helps understanding, at åk 7 level, and never contradict the material. If general knowledge seems to conflict with the material, tell the parent instead of silently "correcting" it.
 - **Never commit or publish anything from `kallmaterial/`** (it is gitignored). Rewrite in your own words. Don't copy long passages or images from handouts or textbooks.
 - **Never change a question `id` once published.** Progress is keyed on it. To retire a question, delete it. To change its meaning substantially, give it a new id.
