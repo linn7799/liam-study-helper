@@ -13,8 +13,6 @@
     kunde_inte_ladda: "Området kunde inte laddas.",
     hittadesInte: "Sidan finns inte.",
     tillStart: "Till startsidan",
-    provIdag: "Prov idag!", provImorgon: "Prov imorgon",
-    provOm: (n) => `Prov om ${n} dagar`, provVarit: "Provet har varit",
     kan: (p) => `Du kan ${p} % av området`,
     inteBorjat: "Inte påbörjat än",
     las: "Läs", ova: "Öva", provtraning: "Provträning",
@@ -276,14 +274,6 @@
     return el("div", { class: "bar" + (p < 40 ? " low" : p < 75 ? " mid" : ""), role: "progressbar", "aria-valuemin": "0", "aria-valuemax": "100", "aria-valuenow": String(p) },
       el("span", { style: `width:${p}%` }));
   }
-  function provPill(datum) {
-    const d = dagarTill(datum);
-    if (d == null) return null;
-    if (d < 0) return el("span", { class: "pill done" }, T.provVarit);
-    if (d === 0) return el("span", { class: "pill soon" }, T.provIdag);
-    if (d === 1) return el("span", { class: "pill soon" }, T.provImorgon);
-    return el("span", { class: "pill" + (d <= 7 ? " soon" : "") }, T.provOm(d));
-  }
   function toast(text) {
     const t = el("div", { class: "toast", role: "status" }, text);
     document.body.appendChild(t);
@@ -364,7 +354,7 @@
         stapel(dm));
     });
     visa(
-      el("p", { class: "muted small", style: "margin-bottom:4px" }, amne.amne, " ", provPill(amne.provdatum)),
+      el("p", { class: "muted small", style: "margin-bottom:4px" }, amne.amne),
       el("h1", null, amne.titel),
       el("p", null, Object.keys(ad.q).length ? T.kan(procent(m)) : T.lasHint),
       stapel(m),
@@ -755,7 +745,7 @@
         const rec = a.fragor.map((f) => ad.q[f.id]).filter((r) => r && r.n);
         const n = rec.reduce((s, r) => s + r.n, 0), r = rec.reduce((s, x) => s + x.r + x.p / 2, 0);
         return el("div", { class: "card" },
-          el("div", { class: "card-head" }, el("h2", null, el("a", { href: `#/o/${enc(a.id)}` }, a.titel)), provPill(a.provdatum)),
+          el("div", { class: "card-head" }, el("h2", null, el("a", { href: `#/o/${enc(a.id)}` }, a.titel))),
           el("div", { class: "stat-grid" },
             el("div", { class: "stat" }, el("b", null, `${rec.length}/${a.fragor.length}`), el("span", null, T.besvarade)),
             el("div", { class: "stat" }, el("b", null, n ? `${procent(r / n)} %` : "–"), el("span", null, T.rattProcent)),
