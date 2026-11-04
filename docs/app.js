@@ -336,7 +336,7 @@
         const m = a ? behorskning(a, a.fragor) : 0;
         const besvarat = a && Object.keys(amneData(a.id).q).length > 0;
         delar.push(el("a", { class: "card", href: `#/o/${enc(om.id)}` },
-          el("div", { class: "card-head" }, el("h2", null, om.titel), provPill(om.provdatum || (a && a.provdatum))),
+          el("div", { class: "card-head" }, el("h2", null, om.titel)),
           el("p", { class: "muted small" }, besvarat ? T.kan(procent(m)) : T.inteBorjat),
           stapel(m)));
       }
