@@ -2,7 +2,7 @@ registreraAmne({
   id: "so/antiken",
   amne: "SO",
   titel: "Antiken",
-  provdatum: "2026-11-09",
+  provdatum: "2026-11-11",
   kallor: [
     "NE: Antiken och Europas tidiga civilisationer",
     "NE: Grekerna",
@@ -12,6 +12,95 @@ registreraAmne({
     "Allmän kunskap (Lgr22 historia åk 7–9)"
   ],
   delomraden: [
+    // ------------------------------------------------------------------
+    // PROVFOKUS (läraren 2026-11-09): "Jämför Aten och Sparta" + "Vad är romarriket?"
+    {
+      id: "fokus-athen-sparta",
+      titel: "Provfokus: Jämför Athen och Sparta",
+      sammanfattning: "Det här kommer på provet! Likheter, skillnader och varför städerna blev så olika.",
+      innehall: [
+        { typ: "faktaruta", rubrik: "Det här kommer på provet", text: "Din lärare har sagt att provet fokuserar på frågan **”Jämför Athen och Sparta”**. (Athen stavas ibland **Aten**. Det är samma stad.) Här har vi samlat allt du behöver på ett ställe." },
+        { typ: "text", text: "Att **jämföra** betyder att visa vad som är **lika** och vad som är **olika**. Ett riktigt bra svar förklarar också **varför** det blev så." },
+        { typ: "lista", rubrik: "Likheter: det här hade Athen och Sparta gemensamt", punkter: [
+          "Båda var **grekiska stadsstater**: en stad och området runt den, som styrde sig själv.",
+          "De hade samma **språk** och samma **religion**, och de var med i **olympiska spelen**.",
+          "I båda städerna gjorde **slavar** mycket av arbetet.",
+          "I båda städerna var det bara **en liten del** av invånarna som fick vara med och bestämma. **Kvinnor och slavar** fick aldrig rösta.",
+          "Båda hade **starka arméer**. De **samarbetade mot perserna** på 400-talet f.Kr."
+        ] },
+        { typ: "tabell", rubriker: ["", "Athen", "Sparta"], rader: [
+          ["**Styre**", "**Demokrati** (direkt demokrati). Fria manliga medborgare möttes i **folkförsamlingen** och röstade om lagar och krig. Ett **råd** valdes genom **lottning**.", "**Två kungar** och **de äldstes råd** (28 män). Spartiater över 30 år fick bara rösta **ja eller nej** till rådets förslag."],
+          ["**Vem fick bestämma?**", "Fria män som var medborgare, ungefär **en tiondel** av invånarna.", "Bara **spartiaterna**, en liten härskande elit."],
+          ["**Livsstil**", "**Rikedom**, teater, konst och fin mat för de rika. Akropolis med templet Parthenon.", "**Enkelt och strängt**, utan lyx och pampiga hus. Därav ordet **spartansk**."],
+          ["**Viktigast**", "**Handel**, **flotta** och **kultur**", "**Armén**"],
+          ["**Barn**", "–", "Pojkarna togs till ett **militärt skolläger vid 7 år**. Soldater från **20 till 60 år**."],
+          ["**Kvinnor**", "Fick inte rösta.", "Skulle **föda pojkar** som kunde bli soldater. Förbjudet att vara ogift."],
+          ["**Armé**", "**Hopliter** som stred sida vid sida, och en **stor flotta**.", "Hela samhället byggde på armén. Anföll **tysta** och fick **aldrig fly eller ge upp**."],
+          ["**Slavar**", "Arbetade i de rikas hus, i gruvor och på olivodlingar.", "**Heloter** skötte jordbruket. De var nästan **90 procent** av befolkningen."]
+        ] },
+        { typ: "text", text: "**Varför blev Sparta så annorlunda?** Tänk på heloterna. Nästan **9 av 10** invånare var slavar. Om de gjorde uppror kunde spartiaterna förlora allt. Därför behövde Sparta en **stark armé** som snabbt kunde slå ner uppror, och hela samhället byggdes runt armén. **Athen** blev i stället rikt på **handel**, till exempel med oliver och olivolja, och hade en stor flotta. Med rikedomen fanns det tid och pengar för **teater, konst och politik**." },
+        { typ: "text", text: "**Efter perserkrigen** började Athen och Sparta kriga **mot varandra** om vem som skulle vara mäktigast. Båda bildade **förbund** med andra städer. Kriget slutade med att **Athen förlorade år 405 f.Kr.**" },
+        { typ: "faktaruta", rubrik: "Så skriver du en bra jämförelse", text: "1. Skriv om **båda** städerna, inte bara en. 2. Ta upp minst en **likhet**. 3. Ta upp flera **skillnader** och använd ord som **medan**, **men** och **däremot**: ”I Athen var handel och kultur viktigast, **medan** allt i Sparta handlade om armén.” 4. Förklara **varför** de var olika (heloterna!). 5. Avsluta gärna med en **egen slutsats**, till exempel var du hellre hade velat bo och varför." }
+      ],
+      nyckelbegrepp: [
+        { ord: "Jämföra", forklaring: "Att visa vad som är lika och vad som är olika mellan två saker." },
+        { ord: "Stadsstat", forklaring: "Ett land som består av en stad och området närmast runt staden." },
+        { ord: "Demokrati", forklaring: "Folkstyre. I Athen fick bara fria manliga medborgare rösta." },
+        { ord: "De äldstes råd", forklaring: "Spartas råd med 28 män som styrde tillsammans med de två kungarna." },
+        { ord: "Spartiater", forklaring: "Den lilla härskande eliten i Sparta, de enda som fick bestämma." },
+        { ord: "Heloter", forklaring: "Slavarna i Sparta som skötte jordbruket. Nästan 90 procent av befolkningen." },
+        { ord: "Hopliter", forklaring: "Fotsoldater i Athens armé som stred tätt sida vid sida." },
+        { ord: "Spartansk", forklaring: "Sträng och enkel, helt utan lyx." }
+      ]
+    },
+    // ------------------------------------------------------------------
+    {
+      id: "fokus-romarriket",
+      titel: "Provfokus: Vad är romarriket?",
+      sammanfattning: "Det här kommer på provet! Vad, var och när romarriket var, hur det styrdes, hölls ihop och tog slut.",
+      innehall: [
+        { typ: "faktaruta", rubrik: "Det här kommer på provet", text: "Din lärare har sagt att provet fokuserar på frågan **”Vad är romarriket?”**. Här är allt det viktigaste samlat. Använd frågorna **Vad? Var? När? Hur? Varför?** som en checklista när du svarar." },
+        { typ: "faktaruta", rubrik: "Svaret i två meningar", text: "Romarriket var ett **imperium**, en stormakt som växte fram från staden **Rom** i Italien och erövrade många andra länder. När det var som störst gick det **runt hela Medelhavet**, från dagens **Storbritannien** till **Kaspiska havet**." },
+        { typ: "text", text: "**Vad?** Ett **imperium** är en stormakt som har erövrat flera andra stater. Romarriket började som små bondbyar vid floden **Tibern**. Först erövrade romarna hela Italien, sedan **Karthago** i Nordafrika (de puniska krigen) och **Grekland**. Till slut kallade de Medelhavet för **Mare nostrum**, **'vårt hav'**." },
+        { typ: "text", text: "**När?** Enligt myten grundades Rom år **753 f.Kr.** av **Romulus och Remus**. Det västromerska riket **föll år 476 e.Kr.** Det östromerska riket levde kvar till **mitten av 1400-talet**. Romarrikets historia brukar delas in i **tre tider**:" },
+        { typ: "bild-svg", svg: "<svg viewBox=\"0 0 340 96\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,sans-serif\" font-size=\"11\"><g stroke=\"var(--accent, currentColor)\" stroke-width=\"2\"><rect x=\"20\" y=\"30\" width=\"60\" height=\"26\" rx=\"4\" fill=\"none\"/><rect x=\"80\" y=\"30\" width=\"118\" height=\"26\" rx=\"4\" fill=\"var(--accent-soft, none)\"/><rect x=\"198\" y=\"30\" width=\"122\" height=\"26\" rx=\"4\" fill=\"none\"/></g><g fill=\"currentColor\" text-anchor=\"middle\" font-weight=\"700\"><text x=\"50\" y=\"22\">Kungatiden</text><text x=\"139\" y=\"22\">Republiken</text><text x=\"259\" y=\"22\">Kejsartiden</text></g><g fill=\"currentColor\" text-anchor=\"middle\"><text x=\"50\" y=\"47\">kungar</text><text x=\"139\" y=\"47\">konsuler, senat</text><text x=\"259\" y=\"47\">enväldig kejsare</text></g><g fill=\"currentColor\" opacity=\".75\"><text x=\"20\" y=\"74\">753 f.Kr.</text><text x=\"80\" y=\"88\" text-anchor=\"middle\">510 f.Kr.</text><text x=\"198\" y=\"74\" text-anchor=\"middle\">Augustus</text><text x=\"320\" y=\"88\" text-anchor=\"end\">476 e.Kr.</text></g></svg>", bildtext: "Romarrikets tre tider. Västromerska riket föll 476 e.Kr." },
+        { typ: "tabell", rubriker: ["Tid", "Hur styrdes Rom?"], rader: [
+          ["**Kungatiden** (700-talet–510 f.Kr.)", "**Kungar** styrde. En tid styrdes romarna av **etruskerna**."],
+          ["**Republiken** (från 500-talet f.Kr.)", "Ledarna **valdes**. **Två konsuler** valdes på ett år, **senaten** var regering och **folkförsamlingen** (fria män över 17 år) röstade. All makt delades för att ingen skulle missbruka den."],
+          ["**Kejsartiden** (från Augustus, i nästan 500 år)", "En **enväldig kejsare** hade all makt. Den förste var **Augustus**, efter inbördeskrigen och mordet på **Julius Caesar** 44 f.Kr."]
+        ] },
+        { typ: "tabell", rubriker: ["Vilka bodde i riket?", "Vilka de var"], rader: [
+          ["**Patricier**", "De rikaste och mäktigaste släkterna."],
+          ["**Plebejer**", "Småbönder, köpmän, hantverkare och fattiga. Fick till slut **folktribuner** som kunde säga **veto**."],
+          ["**Slavar**", "Helt utan rättigheter. Hela ekonomin byggde på **slavarbete**."],
+          ["**Provinsbor**", "Bodde i de erövrade områdena, **provinserna**, och betalade **skatt** till Rom. Vissa fick **medborgarrätt**."]
+        ] },
+        { typ: "lista", rubrik: "Hur? Så höll romarna ihop sitt enorma rike", punkter: [
+          "En **vältränad armé** med hård ordning.",
+          "**Vägar**, som **Via Appia**, så att arméerna kunde förflytta sig snabbt.",
+          "Erövrade områden blev **provinser** som betalade **skatt**.",
+          "**Söndra och härska**: få små folk att slåss mot varandra så att de inte kunde ena sig mot Rom.",
+          "Samma **språk** (latin) och nedskrivna **lagar** (romersk rätt) i hela riket.",
+          "**Bröd och skådespel**: underhållning och jobb för att hålla de fattiga lugna."
+        ] },
+        { typ: "text", text: "**Varför tog det slut?** Det är svårt att hålla ihop ett så **stort** rike, särskilt ett som är byggt med **våld och tvång**. På **300-talet** delades riket i **västromerska riket** (huvudstad Rom) och **östromerska riket** (huvudstad Konstantinopel). Det västromerska riket **föll 476 e.Kr.** Men kulturen försvann inte på en dag. Den förändrades långsamt och smälte samman med de erövrande folkens." },
+        { typ: "lista", rubrik: "Varför är romarriket viktigt i dag?", punkter: [
+          "**Romersk rätt** har präglat Europas lagar, till exempel ”hellre fria än fälla”.",
+          "**Latin** blev grunden till italienska, spanska och franska.",
+          "**Kristendomen** spreds i hela riket och blev statsreligion.",
+          "Städer som **Paris, London och Wien** grundades av romarna."
+        ] }
+      ],
+      nyckelbegrepp: [
+        { ord: "Imperium", forklaring: "En stormakt som har erövrat flera andra stater." },
+        { ord: "Republik", forklaring: "Ett styrelsesätt där ledarna väljs och inte ärver makten." },
+        { ord: "Kejsartiden", forklaring: "Tiden från Augustus då Rom styrdes av enväldiga kejsare, i nästan 500 år." },
+        { ord: "Provins", forklaring: "Ett erövrat område i romarriket som fick betala skatt till Rom." },
+        { ord: "Mare nostrum", forklaring: "'Vårt hav'. Romarnas namn på Medelhavet." },
+        { ord: "Söndra och härska", forklaring: "Att få fiender att slåss mot varandra så att de inte kan ena sig." },
+        { ord: "Envälde", forklaring: "När en person har all makt." }
+      ]
+    },
     // ------------------------------------------------------------------
     {
       id: "tidiga",
@@ -401,6 +490,95 @@ registreraAmne({
   ],
 
   fragor: [
+    // ---------------- Provfokus: Jämför Athen och Sparta ----------------
+    { id: "jas-01", delomrade: "fokus-athen-sparta", typ: "flerval", niva: 1, fraga: "Hur styrdes Athen?",
+      alternativ: ["Med demokrati, där fria manliga medborgare röstade", "Av två kungar och de äldstes råd", "Av en enväldig kejsare", "Av en diktator i sex månader"], svar: 0,
+      forklaring: "Athen hade direkt demokrati: medborgarna röstade själva i folkförsamlingen. Två kungar och de äldstes råd fanns i Sparta." },
+    { id: "jas-02", delomrade: "fokus-athen-sparta", typ: "flerval", niva: 1, fraga: "Hur styrdes Sparta?",
+      alternativ: ["Av två kungar tillsammans med de äldstes råd", "Med demokrati för alla fria män", "Av heloterna", "Av en folkförsamling som valdes genom lottning"], svar: 0,
+      forklaring: "De äldstes råd hade 28 män. Spartiater över 30 år fick bara rösta ja eller nej till rådets förslag." },
+    { id: "jas-03", delomrade: "fokus-athen-sparta", typ: "para-ihop", niva: 2, fraga: "Stämmer det in på Athen eller Sparta?",
+      par: [["Hade demokrati", "Athen"], ["Styrdes av två kungar", "Sparta"], ["Teater, konst och handel", "Athen"], ["Pojkar till militärläger vid sju år", "Sparta"], ["En stor flotta", "Athen"], ["Heloter skötte jordbruket", "Sparta"]],
+      forklaring: "Ett knep: Athen = handel, kultur och demokrati. Sparta = armén, enkelhet och kungar." },
+    { id: "jas-04", delomrade: "fokus-athen-sparta", typ: "flerval", niva: 2, fraga: "Vad hade Athen och Sparta gemensamt? Välj alla som stämmer.",
+      alternativ: ["Båda var grekiska stadsstater", "Samma språk och religion", "Slavar gjorde mycket av arbetet", "Båda hade demokrati", "Båda levde helt utan lyx"], svar: [0, 1, 2],
+      forklaring: "En bra jämförelse tar upp likheter också. Demokrati fanns bara i Athen, och det var Sparta som levde utan lyx." },
+    { id: "jas-05", delomrade: "fokus-athen-sparta", typ: "santfalskt", niva: 2, fraga: "I både Athen och Sparta fick alla vuxna invånare vara med och bestämma.", svar: false,
+      forklaring: "I Athen fick ungefär en tiondel rösta, bara fria manliga medborgare. I Sparta bestämde bara den lilla eliten spartiater. Kvinnor och slavar fick inte vara med i någon av städerna." },
+    { id: "jas-06", delomrade: "fokus-athen-sparta", typ: "flerval", niva: 2, fraga: "Varför var armén så viktig att hela Spartas samhälle byggdes runt den?",
+      alternativ: ["Heloterna var nästan 90 procent av befolkningen, och armén skulle slå ner uppror", "Sparta hade ingen flotta och kunde inte handla", "Gudinnan Athena krävde det", "Spartanerna ville erövra Rom"], svar: 0,
+      forklaring: "Så få spartiater styrde över så många slavar. Utan en stark armé kunde heloterna ta över. Det är ett bra ”varför” att ha med när du jämför." },
+    { id: "jas-07", delomrade: "fokus-athen-sparta", typ: "fyll-i", niva: 1, fraga: "Sparta styrdes av två kungar och de äldstes ___.",
+      godkanda_svar: ["råd", "rad"],
+      forklaring: "Rådet bestod av 28 män. I Athen fanns också ett råd, men där valdes det genom lottning ur folkförsamlingen." },
+    { id: "jas-08", delomrade: "fokus-athen-sparta", typ: "flerval", niva: 2, fraga: "Vilken mening är en bra jämförelse mellan Athen och Sparta?",
+      alternativ: ["I Athen var handel och kultur viktigast, medan allt i Sparta handlade om armén.", "Sparta hade en stark armé.", "Athen och Sparta var två städer i Grekland som var olika.", "I Athen fanns Akropolis med templet Parthenon."], svar: 0,
+      forklaring: "En bra jämförelse säger något om båda städerna i samma mening. Ord som medan, men och däremot hjälper dig." },
+    { id: "jas-09", delomrade: "fokus-athen-sparta", typ: "santfalskt", niva: 2, fraga: "Athen och Sparta var alltid vänner och krigade aldrig mot varandra.", svar: false,
+      forklaring: "De samarbetade mot perserna, men sedan krigade de om vem som skulle vara mäktigast. Athen förlorade år 405 f.Kr." },
+    { id: "jas-10", delomrade: "fokus-athen-sparta", typ: "ordning", niva: 2, fraga: "Sätt händelserna i rätt tidsordning, äldst först.",
+      alternativ: ["Athen och Sparta strider tillsammans mot perserna", "Athen och Sparta krigar om vem som ska vara mäktigast", "Athen förlorar kriget mot Sparta", "Stadsstaterna tvingas in i ett förbund med Makedonien"],
+      forklaring: "Perserkrigen på 400-talet f.Kr. → kriget mellan Athen och Sparta → Athen förlorar 405 f.Kr. → Makedonien tar över på 300-talet f.Kr." },
+    { id: "jas-11", delomrade: "fokus-athen-sparta", typ: "flerval", niva: 2, fraga: "Vilka fick rösta ja eller nej till rådets förslag i Sparta?",
+      alternativ: ["Alla spartiater som var över 30 år", "Alla fria män över 17 år", "Alla heloter", "Bara de två kungarna"], svar: 0,
+      forklaring: "”Fria män över 17 år” fick rösta i Rom, inte i Sparta. Akta dig så att du inte blandar ihop dem på provet!" },
+    { id: "jas-12", delomrade: "fokus-athen-sparta", typ: "fritext", niva: 3, fraga: "Jämför Athen och Sparta. Skriv om minst en likhet och minst tre skillnader.",
+      modellsvar: "Båda var grekiska stadsstater med samma språk och religion, och i båda gjorde slavar mycket av arbetet. Men Athen var en demokrati där fria manliga medborgare röstade, medan Sparta styrdes av två kungar och de äldstes råd. I Athen var handel, flotta och kultur som teater viktigast, medan allt i Sparta handlade om armén. Spartanerna levde enkelt utan lyx, och pojkarna togs till ett militärläger när de var sju år.",
+      nyckelord: ["stadsstat|språk|religion|grek|båda", "demokrati|rösta|folkförsamling", "kung|kungar|äldstes råd", "armé|soldat|militär", "lyx|enkel|spartansk|teater|konst|handel"],
+      forklaring: "Ett toppsvar har likheter, skillnader om styre, livsstil och armé, och använder ord som medan och men." },
+    { id: "jas-13", delomrade: "fokus-athen-sparta", typ: "fritext", niva: 3, fraga: "Förklara varför livet i Sparta blev så annorlunda än livet i Athen.",
+      modellsvar: "I Sparta var nästan 90 procent av befolkningen slavar, heloter. Spartiaterna var rädda för uppror, så de behövde en mycket stark armé. Därför byggdes hela samhället runt armén och livet blev strängt och enkelt. Athen blev i stället rikt på handel och hade en stor flotta, och då fanns det pengar och tid för teater, konst och demokrati.",
+      nyckelord: ["helot|slav", "uppror", "armé|soldat|militär", "handel|rik|flotta"],
+      forklaring: "Att förklara varför är det som ger högst betyg. Nyckeln är heloterna i Sparta och handeln i Athen." },
+    { id: "jas-14", delomrade: "fokus-athen-sparta", typ: "fritext", niva: 3, fraga: "Skulle du hellre ha velat leva i Athen eller i Sparta? Motivera med fakta om båda städerna.",
+      modellsvar: "Jag hade hellre levt i Athen, om jag var en fri manlig medborgare. Då hade jag fått rösta i folkförsamlingen och gå på teater. I Sparta hade jag fått lämna min familj vid sju år och vara soldat tills jag var 60. Men om jag var slav eller kvinna hade jag inte fått bestämma i någon av städerna.",
+      nyckelord: ["athen|aten", "sparta", "demokrati|rösta|teater|konst|handel|lyx", "armé|soldat|militär|enkel|sträng"],
+      forklaring: "Det finns inget rätt svar, men du måste använda fakta om båda städerna. Fundera också på vem du hade varit: medborgare, kvinna eller slav?" },
+
+    // ---------------- Provfokus: Vad är romarriket? ----------------
+    { id: "vrr-01", delomrade: "fokus-romarriket", typ: "flerval", niva: 1, fraga: "Romarriket var ett imperium. Vad är ett imperium?",
+      alternativ: ["En stormakt som har erövrat flera andra stater", "En stad som styr sig själv", "Ett land där folket röstar om allt", "Ett förbund av jämlika länder"], svar: 0,
+      forklaring: "Romarriket började som en liten stad vid Tibern men erövrade länder runt hela Medelhavet. En stad som styr sig själv är en stadsstat, som Athen." },
+    { id: "vrr-02", delomrade: "fokus-romarriket", typ: "flerval", niva: 1, fraga: "Hur stort var romarriket när det var som störst?",
+      alternativ: ["Från dagens Storbritannien till Kaspiska havet, runt hela Medelhavet", "Bara den italienska halvön", "Italien och Grekland", "Från Spanien till Indien"], svar: 0,
+      forklaring: "Romarna kallade Medelhavet Mare nostrum, 'vårt hav', eftersom de styrde alla länder runt det. Indien nådde Alexander den store, inte romarna." },
+    { id: "vrr-03", delomrade: "fokus-romarriket", typ: "ordning", niva: 2, fraga: "Sätt romarrikets tider och händelser i rätt ordning, äldst först.",
+      alternativ: ["Kungatiden", "Republiken", "Kejsartiden börjar med Augustus", "Riket delas i ett västligt och ett östligt", "Det västromerska riket faller"],
+      forklaring: "Kungatiden (till 510 f.Kr.) → republiken → kejsartiden → delning på 300-talet → västromerska riket faller 476 e.Kr." },
+    { id: "vrr-04", delomrade: "fokus-romarriket", typ: "para-ihop", niva: 2, fraga: "Para ihop tiden med hur Rom styrdes.",
+      par: [["Kungatiden", "Kungar styrde"], ["Republiken", "Två konsuler, senaten och folkförsamlingen"], ["Kejsartiden", "En enväldig kejsare hade all makt"]],
+      forklaring: "I republiken valdes ledarna och makten delades. I kejsartiden samlades all makt hos en person igen." },
+    { id: "vrr-05", delomrade: "fokus-romarriket", typ: "flerval", niva: 2, fraga: "Hur höll romarna ihop sitt enorma rike? Välj alla som stämmer.",
+      alternativ: ["En vältränad armé", "Vägar som Via Appia", "Provinser som betalade skatt", "Söndra och härska", "Alla invånare fick rösta", "De erövrade folken fick bestämma själva"], svar: [0, 1, 2, 3],
+      forklaring: "Riket hölls ihop med armé, vägar, skatter och söndra och härska, alltså med makt och tvång. De flesta invånare fick inte bestämma något." },
+    { id: "vrr-06", delomrade: "fokus-romarriket", typ: "santfalskt", niva: 2, fraga: "Romarriket var en republik under hela sin historia.", svar: false,
+      forklaring: "Först var Rom ett kungadöme, sedan en republik, och från Augustus styrdes det av kejsare i nästan 500 år." },
+    { id: "vrr-07", delomrade: "fokus-romarriket", typ: "fyll-i", niva: 1, fraga: "Erövrade områden i romarriket kallades ___ och fick betala skatt till Rom.",
+      godkanda_svar: ["provinser", "provins", "provinserna"],
+      forklaring: "Skatten från provinserna gjorde Rom rikt. Augustus gav guvernörerna i provinserna övervakare så att de inte blev för giriga." },
+    { id: "vrr-08", delomrade: "fokus-romarriket", typ: "fyll-i", niva: 1, fraga: "Roms förste kejsare hette ___.",
+      godkanda_svar: ["Augustus", "Octavianus", "kejsar Augustus"],
+      forklaring: "Augustus var Julius Caesars adoptivson. Han kallade sig aldrig diktator, men i praktiken hade han all makt." },
+    { id: "vrr-09", delomrade: "fokus-romarriket", typ: "flerval", niva: 2, fraga: "Vad är den största skillnaden mellan republiken och kejsartiden?",
+      alternativ: ["I republiken valdes ledarna och makten delades, i kejsartiden hade en kejsare all makt", "I republiken fanns inga slavar", "I kejsartiden fick alla invånare rösta", "Republiken var större än kejsardömet"], svar: 0,
+      forklaring: "I republiken delades alla höga tjänster av två personer för att ingen skulle missbruka makten. Kejsaren var enväldig." },
+    { id: "vrr-10", delomrade: "fokus-romarriket", typ: "para-ihop", niva: 2, fraga: "Para ihop gruppen i romarriket med vilka de var.",
+      par: [["Patricier", "De rikaste och mäktigaste släkterna"], ["Plebejer", "Småbönder, hantverkare, köpmän och fattiga"], ["Slavar", "Helt utan rättigheter"], ["Provinsbor", "Bodde i erövrade områden och betalade skatt"]],
+      forklaring: "Hela ekonomin byggde på slavarbete. Bara ett fåtal militärer, politiker och handelsmän blev rika på riket." },
+    { id: "vrr-11", delomrade: "fokus-romarriket", typ: "santfalskt", niva: 2, fraga: "Det östromerska riket levde kvar i nästan 1 000 år efter att det västromerska riket föll.", svar: true,
+      forklaring: "Västromerska riket föll 476 e.Kr. Östromerska (bysantinska) riket med huvudstaden Konstantinopel levde kvar till mitten av 1400-talet." },
+    { id: "vrr-12", delomrade: "fokus-romarriket", typ: "fritext", niva: 3, fraga: "Vad är romarriket? Förklara så att någon som aldrig har hört talas om det förstår.",
+      modellsvar: "Romarriket var ett imperium, en stormakt, som växte fram från staden Rom i Italien. Romarna erövrade länder runt hela Medelhavet, från Storbritannien till Kaspiska havet. Först styrdes Rom av kungar, sedan var det en republik där ledarna valdes, och från Augustus styrdes det av kejsare. Riket hölls ihop med armén, vägar, skatt från provinserna och söndra och härska. Det delades i två delar, och det västromerska riket föll år 476 e.Kr.",
+      nyckelord: ["imperium|stormakt|stort rike|erövra", "rom|italien", "medelhav", "kejsare|republik|kung|augustus", "armé|väg|provins|skatt|söndra", "476|föll|delades"],
+      forklaring: "Tänk Vad? Var? När? Hur? – vad ett imperium är, var det låg, när det fanns, hur det styrdes och hölls ihop, och hur det slutade." },
+    { id: "vrr-13", delomrade: "fokus-romarriket", typ: "fritext", niva: 3, fraga: "Varför var det så svårt att hålla ihop romarriket, och vad hände till slut?",
+      modellsvar: "Riket var enormt stort och byggt med våld och tvång. De erövrade folken och slavarna ville vara fria och gjorde uppror, och vid gränserna var det krig. På 300-talet delades riket i ett västromerskt och ett östromerskt rike. Det västromerska riket föll år 476 e.Kr.",
+      nyckelord: ["stort|stora|enormt", "våld|tvång|uppror|krig", "delades|delas|två|väst|öst", "476|föll"],
+      forklaring: "Ett rike som hålls ihop med tvång blir svårt att styra ju större det blir. Men romersk kultur levde vidare och smälte samman med de nya folkens." },
+    { id: "vrr-14", delomrade: "fokus-romarriket", typ: "flerval", niva: 2, fraga: "Romarriket var ett imperium men Athen var en stadsstat. Vad är skillnaden?",
+      alternativ: ["En stadsstat är en stad med området runt, ett imperium har erövrat många andra stater", "En stadsstat har alltid en kejsare", "Ett imperium är alltid en demokrati", "Det är två ord för samma sak"], svar: 0,
+      forklaring: "Rom började faktiskt nästan som en stadsstat, men växte genom erövringar tills det blev ett imperium." },
+
     // ---------------- Europas tidiga civilisationer ----------------
     { id: "tid-01", delomrade: "tidiga", typ: "flerval", niva: 1, fraga: "Vad betyder ordet antik?",
       alternativ: ["Gammal", "Grekisk", "Mäktig", "Helig"], svar: 0,

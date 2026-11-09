@@ -10,7 +10,7 @@ registreraKatalog([
     id: "so",
     namn: "SO",
     omraden: [
-      { id: "so/antiken", titel: "Antiken", fil: "amnen/so/antiken.js", provdatum: "2026-11-09" }
+      { id: "so/antiken", titel: "Antiken", fil: "amnen/so/antiken.js", provdatum: "2026-11-11" }
     ]
   },
   {
